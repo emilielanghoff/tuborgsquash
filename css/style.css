@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+/* device width start*/
+* {
+   width: 100%;
+   margin: 0%;
+   max-width: 2000px;
+   margin-left: auto;
+   margin-right: auto;
+}
+/* divice width end*/
+
+/*header start*/
+.header {
+    height: 50px;
+    background-color: #f6a00a;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    min-height: 35px;
+    position: relative;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+/*nav-bar med burgermenu start*/
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.basket {
+    width: 35px;
+    grid-column: 2;
+    padding-top: 3px;
+}
+
+.basket img {
+    width: 25px;
+}
+
+.hamburger {
+    display: block;
+    order: 2;
+    width: 35px;
+    grid-column: 3;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: absolute;
+    left: -150%;
+    top: 45px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f6a00a;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.nav-item {
+    margin: 26px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+/*nav-bar med burgermenu end*/
+/*header end*/
+
+/*landing page video start*/
+.hero {
+    padding-top: 50px;
+    height: fit-content;
+    width: 100%;
+    
+}
+
+.hero-video {
+    display: block;
+}
+
+.hero-video-laptop {
+    display: none;
+}
+
+/*landing page video end*/
+
+/*contest start*/
+.contest {
+    background-image: url(/img/backgrounds-04-04.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contest-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*slideshow instagram start*/
+@keyframes fade{
+    from{
+      opacity:0.4;
+    }
+    to{
+      opacity:1;
+    }
+}
+
+.slider{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+
+}
+  
+.slides{
+    overflow: hidden;
+    animation-name: fade;
+    animation-duration: 1s;
+    display: none;
+}
+  
+.slides img{
+    width:100%;
+    border-radius: 2%;
+    
+}
+  
+.dots{
+    margin: 0;
+    text-align: center;
+}
+
+.dot{
+    display: inline-block;
+    border-radius: 50%;
+    background:#d3d3d3;
+    padding: 8px;
+    margin: 10px 5px;
+    width: 1px;
+}
+  
+.active{
+    background: #f6a00a; 
+}
+
+.insta-images {
+    display: none;
+}
+
+/*slideshow instagram end*/
+
+.contest-text {
+    box-sizing: border-box;
+    width: 80%;
+    padding-bottom: 40px;
+}
+
+.contest h1 {
+    font-family: 'Patrick Hand SC', cursive;
+    color: #f6a00a;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.contest p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+
+.shop-heading {
+    padding-bottom: 35%;
+}
+/*contest end*/
+
+/*shop start*/
+.shop h2 {
+    font-family: 'Patrick Hand SC', cursive;
+    color: #f6a00a;
+    text-align: center;
+    font-size: 2.5rem;
+    z-index: 2;
+}
+
+.shop button {
+    font-family: 'Raleway', sans-serif;
+    color: #f6a00a;
+    z-index: 2;
+    font-size: 1rem;
+}
+
+.products-shop {
+    object-fit: cover;
+    position: relative;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10rem;
+}
+
+.types {
+    display: flex;
+    justify-content: space-between;
+    gap: 35%;
+    box-sizing: border-box;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.background-shop-info {
+    margin-top: -1px;
+}
+
+/*shop end*/
+
+/*infographic start*/
+.background-info-om {
+    margin-bottom: -5px;
+}
+
+.infographic-img-laptop {
+    display: none;
+}
+
+/*infographic end*/
+
+/*om start*/
+.om-content {
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+
+.history h2 {
+    font-family: 'Patrick Hand SC', cursive;
+    color: #f6a00a;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.history p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.history {
+    background-image: url(/img/backgrounds-01.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+}
+
+.floating-can {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*om end*/
+
+/*footer start*/
+.line {
+    display: block;
+    background-color: #fdc60d;
+    width: 100%;
+    height: 5px;
+}
+
+.footer-link a {
+    color: #f6a00a;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    padding-left: 3%;
+}
+
+.footer {
+    background-color: #f6a00a;
+}
+
+.input {
+    width: 80%;
+}
+
+.contact p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact {
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 6%;
+}
+
+.kundeservice {
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: space-between;
+    gap: 5px;
+    padding-bottom: 10%;
+}
+
+.message {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100px;
+    
+}
+
+.submit-button {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+/*footer end*/
+
+@media screen and (min-width: 375px) {
+    .header {
+        height: 55px;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .nav-menu a {
+        font-size: 1.2rem;
+    }
+
+    .history h2 {
+        font-size: 2.4rem;
+    }
+
+    .contact {
+        padding-right: 5%;
+    }
+
+}
+
+@media screen and (min-width: 425px) {
+    .header {
+        height: 60px;
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
+
+    .nav-menu a {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        height: 70px;
+    }
+
+    .hero {
+        padding-top: 70px;
+    }
+
+    .basket img {
+        width: 35px;
+    }
+    
+    .hamburger {
+        width: 45px;
+    }
+    
+    .bar {
+        width: 35px;
+    }
+
+    .header-content {
+        padding-top: 0;
+        padding-right: 3%;
+        
+    }
+
+    .basket {
+        width: 50px;
+    }
+
+    .contest-text h1 {
+        font-size: 3rem;
+    }
+
+    .contest-text p {
+        font-size: 1.4rem;
+    }
+
+    .shop h2 {
+        font-size: 3rem;
+    }
+
+    .shop-heading {
+        padding-bottom: 55%;
+    }
+
+    .shop button {
+        font-size: 1.5rem;
+    }
+
+    .history h2 {
+        font-size: 3rem;
+    }
+
+    .history p {
+        font-size: 1.4rem;
+    }
+
+    .contact {
+        padding-right: 10%;
+    }
+
+    .contact p {
+        font-size: 1.6rem;
+    }
+
+    .line {
+        height: 7px;
+    }
+
+    .input input {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        height: 60px;
+    }
+    
+    .hero {
+        padding-top: 60px;
+    }
+
+    .hero-video {
+        display: none;
+    }
+
+    .hero-video-laptop {
+        display: block;
+    }
+
+    .hero {
+        object-fit: cover;
+        
+    }
+    
+    .history {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 20%;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .insta-images {
+        display: flex;
+        padding-top: 15%;
+        justify-content: space-around;
+    }
+    
+    .contest {
+        background-position: bottom;
+    }
+
+    .products-shop {
+        height: 800px;
+    }
+
+    .shop-content {
+        gap: 0;
+    }
+
+    .infographic-img {
+        display: none;
+    }
+
+    .infographic-img-laptop {
+        display: block;
+    }
+
+    .contest p {
+        font-size: 1.5rem;
+    }
+
+    .shop button {
+        font-size: 1.3rem;
+    }
+
+    .history p {
+        font-size: 1.5rem;
+    }
+
+    .input input {
+        font-size: 1.2rem;
+    }
+
+    .shop h2 {
+        padding-bottom: 35%;
+    }
+
+    .types {
+        padding-bottom: 10%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .contest h1 {
+        font-size: 4rem;
+    }
+
+    .contest p {
+        font-size: 1.6rem;
+        padding-bottom: 70px;
+    }
+
+    .products-shop {
+        height: 900px;
+    }
+
+    .shop h2 {
+        font-size: 4rem;
+        padding-bottom: 40%;
+    }
+    
+    .history h2 {
+        padding-top: 15%;
+        font-size: 4rem;
+    }
+
+    .history p {
+        font-size: 1.6rem;
+    }
+
+    .input {
+        padding-bottom: 5%;
+    }
+
+    .nav-menu a {
+        font-size: 2rem;
+    }
+
+    .footer-link a {
+        font-size: 4rem;
+    }
+
+    .types {
+        padding-bottom: 15%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .products-shop {
+        height: 950px;
+    }
+    
+    .shop h2 {
+        padding-bottom: 35%;
+    }
+
+    .types {
+        padding-bottom: 10%;
+    }
+
+    .footer p {
+        font-size: 2rem;
+    }
+
+}
+
