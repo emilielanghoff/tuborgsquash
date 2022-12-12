@@ -146,6 +146,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
 }
 
 /*slideshow instagram start*/
@@ -163,7 +164,7 @@
     margin: 0;
     width: 100%;
     overflow: hidden;
-
+    
 }
   
 .slides{
@@ -171,12 +172,13 @@
     animation-name: fade;
     animation-duration: 1s;
     display: none;
+    
 }
   
 .slides img{
     width:100%;
     border-radius: 2%;
-    
+
 }
   
 .dots{
@@ -537,6 +539,10 @@
         object-fit: cover;
         
     }
+
+    .contest-content {
+        padding-top: 0;
+    }
     
     .history {
         display: grid;
@@ -550,7 +556,7 @@
 
     .insta-images {
         display: flex;
-        padding-top: 15%;
+        padding-top: 10%;
         justify-content: space-around;
     }
     
