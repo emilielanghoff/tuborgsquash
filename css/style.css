@@ -529,46 +529,62 @@
     color: white;
 }
 
+input[type=text] {
+    color: black;
+}
+
 /*footer end*/
 
+/*break points start*/
+
+/*break point mellem mobil start*/
 @media screen and (min-width: 375px) {
+    /*header start*/
     .header {
         height: 55px;
-    }
-
-    .hero {
-        padding-top: 55px;
-    }
-
-    .nav-menu a {
-        font-size: 1.2rem;
-    }
-
-    .history h2 {
-        font-size: 2.4rem;
-    }
-
-    .contact {
-        padding-right: 5%;
-    }
-
-    .container-productsite h1 {
-        font-size: 2.19rem;
     }
 
     .bag-header {
         height: 55px;
     }
 
-}
+    .nav-menu a {
+        font-size: 1.2rem;
+    }
+    /*header end*/
 
+    /*video start*/
+    .hero {
+        padding-top: 55px;
+    }
+    /*video end*/
+
+    /*om start*/
+    .history h2 {
+        font-size: 2.4rem;
+    }
+    /*om end*/
+
+    /*footer start*/
+    .contact {
+        padding-right: 5%;
+    }
+    /*footer end*/
+
+    /*produktside start*/
+    .container-productsite h1 {
+        font-size: 2.19rem;
+    }
+    /*produktside end*/
+    
+}
+/*break point mellem mobil end*/
+
+/*break point stor mobil start*/
 @media screen and (min-width: 425px) {
+    /*header start*/
     .header {
         height: 60px;
-    }
-
-    .hero {
-        padding-top: 60px;
     }
 
     .nav-menu a {
@@ -578,20 +594,28 @@
     .bag-header {
         height: 60px;
     }
+    /*header end*/
 
+    /*video start*/
+    .hero {
+        padding-top: 60px;
+    }
+    /*video end*/
+
+    /*produktside start*/
     .container-productsite h1 {
         font-size: 2.47rem;
     }
+    /*produktside end*/
 
 }
+/*break point stor mobil end*/
 
+/*break point tablet start*/
 @media screen and (min-width: 768px) {
+    /*header start*/
     .header {
         height: 70px;
-    }
-
-    .hero {
-        padding-top: 70px;
     }
 
     .basket img {
@@ -609,13 +633,24 @@
     .header-content {
         padding-top: 0;
         padding-right: 3%;
-        
     }
 
     .basket {
         width: 50px;
     }
 
+    .bag-header {
+        height: 70px;
+    }
+    /*header end*/
+
+    /*video start*/
+    .hero {
+        padding-top: 70px;
+    }
+    /*video end*/
+
+    /*konkurrence start*/
     .contest-text h1 {
         font-size: 3rem;
     }
@@ -623,7 +658,9 @@
     .contest-text p {
         font-size: 1.4rem;
     }
+    /*konkurrence end*/
 
+    /*shop start*/
     .shop h2 {
         font-size: 3rem;
     }
@@ -635,7 +672,9 @@
     .shop a {
         font-size: 1.5rem;
     }
+    /*shop end*/
 
+    /*om start*/
     .history h2 {
         font-size: 3rem;
     }
@@ -643,7 +682,9 @@
     .history p {
         font-size: 1.4rem;
     }
+    /*om end*/
 
+    /*footer start*/
     .contact {
         padding-right: 10%;
     }
@@ -659,11 +700,9 @@
     .input input {
         font-size: 1.3rem;
     }
+    /*footer end*/
 
-    .bag-header {
-        height: 70px;
-    }
-
+    /*produktside start*/
     .container-productsite h1 {
         font-size: 4rem;
     }
@@ -684,18 +723,30 @@
     .indhold {
         font-size: 1.3rem;
     }
+    /*produktside end*/
 
+    /*kurv start*/
     .kurv-tom h1 {
         font-size: 3rem;
     }
+    /*kurv end*/
 
 }
+/*break point tablet end*/
 
+/*break point lille computer start*/
 @media screen and (min-width: 1024px) {
+    /*header start*/
     .header {
         height: 60px;
     }
+
+    .bag-header {
+        height: 60px;
+    }
+    /*header end*/
     
+    /*video start*/
     .hero {
         padding-top: 60px;
     }
@@ -710,17 +761,12 @@
 
     .hero {
         object-fit: cover;
-        
     }
+    /*video end*/
 
+    /*konkurrence start*/
     .contest-content {
         padding-top: 0;
-    }
-    
-    .history {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-bottom: 20%;
     }
 
     .slider {
@@ -737,6 +783,12 @@
         background-position: bottom;
     }
 
+    .contest p {
+        font-size: 1.5rem;
+    }
+    /*konkurrence end*/
+
+    /*shop start*/
     .products-shop {
         height: 800px;
     }
@@ -745,6 +797,16 @@
         gap: 0;
     }
 
+    .shop a {
+        font-size: 1.3rem;
+    }
+
+    .shop h2 {
+        padding-bottom: 35%;
+    }
+    /*shop end*/
+
+    /*infographic start*/
     .infographic-img {
         display: none;
     }
@@ -752,27 +814,27 @@
     .infographic-img-laptop {
         display: block;
     }
+    /*infographic end*/
 
-    .contest p {
-        font-size: 1.5rem;
-    }
-
-    .shop a {
-        font-size: 1.3rem;
+    /*om start*/
+    .history {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 20%;
     }
 
     .history p {
         font-size: 1.38rem;
     }
+    /*om end*/
 
+    /*footer start*/
     .input input {
         font-size: 1.2rem;
     }
+    /*footer end*/
 
-    .shop h2 {
-        padding-bottom: 35%;
-    }
-
+    /*produktside start*/
     .types {
         padding-bottom: 10%;
     }
@@ -780,10 +842,6 @@
     .container-productsite {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    .bag-header {
-        height: 60px;
     }
 
     .container-productsite h1 {
@@ -810,15 +868,27 @@
     .indhold {
         font-size: 1.2rem;
     }
+    /*produktside end*/
 
+    /*kurv start*/
     .kurv-tom a {
         width: 130px;
         font-size: 1.3rem;
     }
+    /*kurv end*/
 
 }
+/*break point lille computer end*/
 
+/*break point mellem computer start*/
 @media screen and (min-width: 1440px) {
+    /*header start*/
+    .nav-menu a {
+        font-size: 2rem;
+    }
+    /*header end*/
+
+    /*konkurrence start*/
     .contest h1 {
         font-size: 4rem;
     }
@@ -827,7 +897,9 @@
         font-size: 1.6rem;
         padding-bottom: 70px;
     }
+    /*konkurrence end*/
 
+    /*shop start*/
     .products-shop {
         height: 900px;
     }
@@ -836,7 +908,13 @@
         font-size: 4rem;
         padding-bottom: 40%;
     }
+
+    .types {
+        padding-bottom: 15%;
+    }
+    /*shop end*/
     
+    /*om start*/
     .history h2 {
         padding-top: 15%;
         font-size: 4rem;
@@ -845,23 +923,19 @@
     .history p {
         font-size: 1.6rem;
     }
+    /*om end*/
 
+    /*footer start*/
     .input {
         padding-bottom: 5%;
-    }
-
-    .nav-menu a {
-        font-size: 2rem;
     }
 
     .footer-link a {
         font-size: 4rem;
     }
+    /*footer end*/
 
-    .types {
-        padding-bottom: 15%;
-    }
-
+    /*produktside start*/
     .container-productsite h1 {
         font-size: 4rem;
     }
@@ -886,14 +960,20 @@
     .indhold {
         font-size: 1.3rem;
     }
+    /*produktside end*/
 
+    /*kurv start*/
     .kurv-tom h1 {
         font-size: 4rem;
     }
+    /*kurv end*/
 
 }
+/*break point mellem computer end*/
 
+/*break point stor computer start*/
 @media screen and (min-width: 1800px) {
+    /*shop start*/
     .products-shop {
         height: 950px;
     }
@@ -905,14 +985,21 @@
     .types {
         padding-bottom: 10%;
     }
+    /*shop end*/
 
+    /*footer start*/
     .footer p {
         font-size: 2rem;
     }
+    /*footer end*/
 
+    /*produktside start*/
     .container-productsite h1 {
         font-size: 5rem;
     }
+    /*produktside end*/
 
 }
+/*break point stor computer end*/
 
+/*break points end*/
